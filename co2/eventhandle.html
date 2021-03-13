@@ -1,0 +1,31 @@
+<html> 
+    <head> 
+        <title> 
+            JavaScript Event Handling 
+        </title> 
+        <script> 
+     function change_clr() 
+             { 
+              var color = '#'; 
+              for (var i = 0; i < 6; i++ ) 
+              { 
+               color += Math.round(Math.random())*6; 
+              } 
+              document.body.style.background= color; 
+             } 
+        </script> 
+    </head> 
+    
+    <body style = "text-align:center;"> 
+        
+        <h1 style = "color:rgb(238, 255, 1);" > 
+            Welcome!
+</h1> 
+<p style = "font-size: 25px; font-weight: bold;"> 
+ Click on button to change the background color     
+</p> 
+<button onclick = "change_clr()"> 
+    Click here 
+</button>
+    </body> 
+</html>    

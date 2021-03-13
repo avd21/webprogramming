@@ -1,0 +1,42 @@
+</html><html>
+ <head>
+ <title>  Login page
+ </title>
+ <script>
+ function validate()
+ {
+var usr=document.getElementById('user').value;
+var pas=document.getElementById('pass').value;
+if (usr=="")
+{
+  alert("Username must be filled ");
+return false;
+}
+else if(pas=="")
+ {  
+  alert("password name must be filled");
+  return false;
+  }
+  }
+ </script>
+ <style>
+Div
+{
+color: rgb(211, 250, 193);
+ font-size: 20px;
+ font-weight: bold;
+ }
+</style>
+</head> 
+<body style="background-image:url(aa.jpg);text-align:center;">
+<h1 style="color:rgb(219, 238, 255);font-weight: bold")>Login</h1>
+ <form  method="POST" action="home.html" onsubmit="return validate();">
+<div >User  ID
+ <input type="text" id="user"></div><br>
+<div>Password
+<input type="password" id="pass">
+ </div> <br>
+ <div><input type="submit" value="Login"></div>
+ </form>
+</body>
+

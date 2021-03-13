@@ -1,0 +1,32 @@
+<html>
+ <head>
+    <title>mouse event</title>
+     <style type="text/css">
+      h{
+            color: navy;
+               text-indent: 30px;
+        }
+     </style>
+    <script type="text/javascript">
+        function mouseover(){
+            document.getElementById("id1").src="logo.png"; 
+            document.getElementById("p1").innerHTML="Image 1";
+            
+        }
+        function mouseout(){
+            document.getElementById("id1").src="tkmce.jpeg"; 
+            document.getElementById("p1").innerHTML="Image 2";
+        }
+     </script>
+</head>
+<body bgcolor="lightgreen">
+<div>
+    <center>
+        <br><br>
+     <h id="p1">Display a new Image & text when the mouse comes over</h><br>
+    <img id="id1" src="logo.png"  width="500" height="300" onmouseover="mouseover();" onmouseout="mouseout();">
+   </center>
+</div>
+</body>
+</html>
+
