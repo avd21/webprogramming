@@ -1,0 +1,38 @@
+<!DOCTYPEhtml>
+<html>
+<body>
+<?php
+echo"<b>Sorted the names of students in an array  :</b><br>";
+$names=array("Arun","Vishal","Sameer","Nishant","Akansh");
+sort($names);
+
+$clength=count($names);
+for($x=0;$x<$clength;$x++)
+{
+echo$names[$x];
+echo"<br>";
+}
+echo"<br>";
+echo"<b>Sorted using values of their names:</b>";
+echo"<br>";
+$age=array("Arun"=>"36","Vishal"=>"43","Sameer"=>"25","Nishant"=>"32","Akansh"=>"28");
+asort($age);
+
+foreach ($age as$x=>$x_value)
+{
+echo"Key=".$x;
+echo"<br>";
+}
+echo"<br>";
+echo"<b>Sorted using values and in descending order:</b>";
+echo"<br>";
+$age=array("Arun"=>"36","Vishal"=>"43","Sameer"=>"25","Nishant"=>"32","Akansh"=>"28");
+arsort($age);
+foreach($age as$x=>$x_value)
+{
+echo"Key=".$x.",Value=".$x_value;
+echo"<br>";
+}
+?>
+</body>
+</html>
